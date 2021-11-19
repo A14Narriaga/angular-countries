@@ -8,6 +8,8 @@ import { RegionsComponent } from './pages/regions/regions.component'
 import { CapitalsComponent } from './pages/capitals/capitals.component'
 import { CountriesComponent } from './pages/countries/countries.component'
 import { RouterModule } from '@angular/router';
+import { TableComponent } from './components/table/table.component';
+import { InputTextComponent } from './components/input-text/input-text.component';
 
 @NgModule({
 	declarations: [
@@ -15,6 +17,8 @@ import { RouterModule } from '@angular/router';
 		RegionsComponent,
 		CapitalsComponent,
 		CountriesComponent,
+  TableComponent,
+  InputTextComponent,
 	],
 	imports: [CommonModule, SharedModule, FormsModule, RouterModule],
 	exports: [
