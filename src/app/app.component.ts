@@ -1,22 +1,26 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-root',
-  template: `
-
-  <section class="container row mt-4">
-    <div class="col-3">
-      <app-sidenav></app-sidenav>
-    </div>
-    <div class="col">
-      <h3>Countries</h3>
-      <router-outlet></router-outlet>
-    </div>
-  </section>
-
+	selector: 'app-root',
+	template: `
+		<section class="container">
+			<div class="row mt-4">
+				<div class="col-4">
+					<app-sidenav></app-sidenav>
+				</div>
+				<div class="col">
+					<router-outlet></router-outlet>
+				</div>
+			</div>
+		</section>
+	`,
+	styles: [
+		`
+    .container
+      width: 900px
   `,
-  styleUrls: []
+	],
 })
 export class AppComponent {
-  title = 'angular-countries';
+	title = 'angular-countries'
 }

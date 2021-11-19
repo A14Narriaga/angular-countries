@@ -7,8 +7,9 @@
 - ⚙️ Add files and configurations
 - 📝 Comments or readme notes
 
-## Api link
-[REST Countries](https://restcountries.com/)
+## Links
+- [REST Countries](https://restcountries.com/)
+- [Quicktype](https://app.quicktype.io/)
 
 ## Angular CLI
 - Generate modules
@@ -18,9 +19,4 @@ npx ng g m [name] --routing
 - Generate components
 ```
 npx ng g c [name]
-```
-
-## Project structure
-```
-python:tree.txt
 ```

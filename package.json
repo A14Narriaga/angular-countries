@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "npx ng build --base-href \"https://a14narriaga.github.io/angular-countries/\" && npx ngh --dir dist/angular-countries"
+    "deploy": "npx ng build --base-href \"https://a14narriaga.github.io/angular-countries/\" && npx ngh --dir dist/angular-countries",
+    "format": "npx prettier --write ./src/app"
   },
   "private": true,
   "dependencies": {
