@@ -1,2 +1,2 @@
-## API used
+### API used
 - [REST Countries](https://restcountries.com/)
