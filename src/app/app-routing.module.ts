@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
-import { CountriesComponent } from './countries/pages/countries/countries.component'
-import { RegionsComponent } from './countries/pages/regions/regions.component'
-import { CapitalsComponent } from './countries/pages/capitals/capitals.component'
-import { CountryComponent } from './countries/pages/country/country.component'
-import { Error404Component } from './shared/error404/error404.component'
+import { CountriesComponent } from './countries/containers/countries/countries.component'
+import { RegionsComponent } from './countries/containers/regions/regions.component'
+import { CapitalsComponent } from './countries/containers/capitals/capitals.component'
+import { CountryComponent } from './countries/containers/country/country.component'
 
 const routes: Routes = [
 	{

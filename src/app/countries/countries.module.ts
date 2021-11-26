@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms'
 import { SharedModule } from '../shared/shared.module'
 
-import { CountryComponent } from './pages/country/country.component'
-import { RegionsComponent } from './pages/regions/regions.component'
-import { CapitalsComponent } from './pages/capitals/capitals.component'
-import { CountriesComponent } from './pages/countries/countries.component'
-import { RouterModule } from '@angular/router';
-import { TableComponent } from './components/table/table.component';
-import { InputTextComponent } from './components/input-text/input-text.component';
+import { CountryComponent } from './containers/country/country.component'
+import { RegionsComponent } from './containers/regions/regions.component'
+import { CapitalsComponent } from './containers/capitals/capitals.component'
+import { CountriesComponent } from './containers/countries/countries.component'
+import { RouterModule } from '@angular/router'
+import { TableComponent } from './components/table/table.component'
+import { InputTextComponent } from './components/input-text/input-text.component'
 
 @NgModule({
 	declarations: [
@@ -17,8 +17,8 @@ import { InputTextComponent } from './components/input-text/input-text.component
 		RegionsComponent,
 		CapitalsComponent,
 		CountriesComponent,
-  TableComponent,
-  InputTextComponent,
+		TableComponent,
+		InputTextComponent,
 	],
 	imports: [CommonModule, SharedModule, FormsModule, RouterModule],
 	exports: [

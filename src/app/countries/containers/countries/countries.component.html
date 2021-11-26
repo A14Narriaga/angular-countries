@@ -4,10 +4,13 @@
 
 <div class="row">
 	<div class="col">
-		<app-input-text (onEnter)="search($event)"></app-input-text>
+		<app-input-text
+			(onEnter)="search($event)"
+			(onDebounce)="showSugestions($event)"
+			holderText="Search country..."></app-input-text>
 	</div>
 </div>
-
+<hr />
 <app-error *ngIf="error" [msj]="errorMsj"></app-error>
 
 <div class="row" *ngIf="countries.length > 0">

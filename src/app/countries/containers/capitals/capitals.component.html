@@ -1,0 +1,19 @@
+<h2>Capitals</h2>
+
+<hr />
+
+<div class="row">
+	<div class="col">
+		<app-input-text
+			(onEnter)="search($event)"
+			holderText="Search capital..."></app-input-text>
+	</div>
+</div>
+<hr />
+<app-error *ngIf="error" [msj]="errorMsj"></app-error>
+
+<div class="row" *ngIf="countries.length > 0">
+	<div class="col">
+		<app-table [countries]="countries"></app-table>
+	</div>
+</div>

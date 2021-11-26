@@ -1,18 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Country } from '../../interfaces/country.interface';
+import { Component, Input, OnInit } from '@angular/core'
+import { Country } from '../../../interfaces/country.interface'
 
 @Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.sass']
+	selector: 'app-table',
+	templateUrl: './table.component.html',
+	styleUrls: ['./table.component.sass'],
 })
 export class TableComponent implements OnInit {
+	@Input() countries: Country[] = []
 
-  @Input() countries: Country[] = []
+	constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+	ngOnInit(): void {}
 }
