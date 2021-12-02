@@ -18,6 +18,7 @@ export class CapitalsComponent implements OnInit {
 
 	search = (term: string) => {
 		this.error = false
+    this.countries = []
 		this.countriesService.searchCapitals(term).subscribe((countries) => {
 			this.countries = countries
 			if (countries.length === 0) {

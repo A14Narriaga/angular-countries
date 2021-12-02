@@ -1,16 +1,25 @@
-<h2>Countries</h2>
-
-<hr />
-
-<div class="row">
-	<div class="col">
-		<app-input-text
-			(onEnter)="search($event)"
-			(onDebounce)="showSugestions($event)"
-			holderText="Search country..."></app-input-text>
+<section class="animate__animated animate__fadeIn">
+	<h2>Countries</h2>
+	<hr />
+	<div class="row">
+		<div class="col">
+			<app-input-text
+				(onEnter)="search($event)"
+				(onDebounce)="showSugestions($event)"
+				holderText="Search country..."></app-input-text>
+		</div>
 	</div>
-</div>
-<hr />
+	<section class="mt-2">
+		<span
+			class="badge bg-info text-dark me-2"
+			*ngFor="let suggestion of suggestions"
+			[routerLink]="['/country', suggestion.cca2]">
+			{{ suggestion.name.common }}
+		</span>
+	</section>
+	<hr />
+</section>
+
 <app-error *ngIf="error" [msj]="errorMsj"></app-error>
 
 <div class="row" *ngIf="countries.length > 0">

@@ -1,15 +1,16 @@
-<h2>Capitals</h2>
-
-<hr />
-
-<div class="row">
-	<div class="col">
-		<app-input-text
-			(onEnter)="search($event)"
-			holderText="Search capital..."></app-input-text>
+<section class="animate__animated animate__fadeIn">
+	<h2>Capitals</h2>
+	<hr />
+	<div class="row">
+		<div class="col">
+			<app-input-text
+				(onEnter)="search($event)"
+				holderText="Search capital..."></app-input-text>
+		</div>
 	</div>
-</div>
-<hr />
+	<hr />
+</section>
+
 <app-error *ngIf="error" [msj]="errorMsj"></app-error>
 
 <div class="row" *ngIf="countries.length > 0">
